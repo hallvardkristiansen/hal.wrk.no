@@ -1,0 +1,49 @@
+body {
+  text-align: center;
+}
+.center {
+  width: 70%;
+  margin: 0 auto;
+}
+#header {
+  display: block;
+  clear: both;
+  text-align: left;
+}
+#title {
+  margin: 2em 0;
+  float: left;
+  display: block;
+  clear: none;
+  width: 40%;
+  box-sizing: border-box;
+}
+#logo {
+  float: left;
+  width: 25%;
+  min-width: 6em;
+  height: 4em;
+}
+h1, h2 {
+  font-size: 1em;
+  margin: 0;
+}
+h1 {
+  padding: 0.2em 0 0;
+}
+h2 {
+  font-weight: normal;
+}
+#about {
+  float: right;
+  text-align: right;
+  clear: none;
+  margin: 2em 0;
+  width: 20%;
+  box-sizing: border-box;
+}
+.sample {
+  display: block;
+  clear: both;
+  text-align: left;
+}
