@@ -3,11 +3,7 @@ $(function() {
   
   logo.build('#logo');
   logo.addevents();
-  var changecolor = function() {
-    logo.transition();
-  };
-  setInterval(changecolor, 5000);
-  setTimeout(changecolor, 1000);
+  logo.transition();
   
   var iframe = $('#player1')[0];
   var player = $f(iframe);
@@ -17,6 +13,7 @@ $(function() {
   player.addEvent('ready', function() {
       status.text('ready');
       
+      player.addEvent('play', onPlay);
       player.addEvent('pause', onPause);
       player.addEvent('finish', onFinish);
       player.addEvent('playProgress', onPlayProgress);
@@ -24,12 +21,16 @@ $(function() {
 
   // Call the API when a button is pressed
   $('button').bind('click', function() {
-    logo.transition('gradientxy');
       player.api($(this).text().toLowerCase());
   });
 
+  function onPlay(id) {
+    logo.transition('playicon');
+    status.text('paused');
+  }
   function onPause(id) {
-      status.text('paused');
+    logo.transition('logo');
+    status.text('paused');
   }
 
   function onFinish(id) {
