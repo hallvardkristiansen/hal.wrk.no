@@ -152,7 +152,7 @@ var logo = {
               .transition()
               .duration(500)
               .attr('opacity', opacity)
-              .attr('fill', fill);
+              .attr('fill', logo.colour());
           }
         }
         this.polygroup.transition()
