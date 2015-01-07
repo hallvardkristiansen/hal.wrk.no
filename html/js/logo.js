@@ -28,19 +28,19 @@ var logo = {
         [false, false, false,  false,  false,  false,  false,  false],
         [false, false, false,  false,  false,  false,  false,  false],
     [false, false, false,  false,  false,  false,  false,  false,  false],
-    [false, true,  true,   true,  true,  true,  true,   true,  false],
-        [false, true,  true,   true,  true,  true,   true,  false],
-        [false, true,  true,   true,  true,  true,   true,  false],
-    [false, false, true,   true,   true,  true,   true,   false,  false],
-    [false, false, true,   true,   true,  true,   true,   false,  false],
-        [false, false, true,   true,   true,   true,   false,  false],
-        [false, false, true,   true,   true,   true,   false,  false],
-    [false, false, false,  true,   true,  true,   false,  false,  false],
-    [false, false, false,  true,   true,  true,   false,  false,  false],
-        [false, false, false,  true,  true,  false,  false,  false],
-        [false, false, false,  true,  true,  false,  false,  false],
-    [false, false, false,  false,  true,  false,  false,  false,  false],
-    [false, false, false,  false,  true,  false,  false,  false,  false],
+    [false, false,  true,   true,  true,  true,  true,   false,  false],
+        [false, false,  true,   true,  true,  true,   false,  false],
+        [false, false,  true,   true,  true,  true,   false,  false],
+    [false, false, false,   true,   true,  true,   false,   false,  false],
+    [false, false, false,   true,   true,  true,   false,   false,  false],
+        [false, false, false,   true,   true,   false,   false,  false],
+        [false, false, false,   true,   true,   false,   false,  false],
+    [false, false, false,  false,   true,  false,   false,  false,  false],
+    [false, false, false,  false,   true,  false,   false,  false,  false],
+        [false, false, false,  false,  false,  false,  false,  false],
+        [false, false, false,  false,  false,  false,  false,  false],
+    [false, false, false,  false,  false,  false,  false,  false,  false],
+    [false, false, false,  false,  false,  false,  false,  false,  false],
         [false, false, false,  false,  false,  false,  false,  false],
   ],
   'mailgrid': [
@@ -66,8 +66,9 @@ var logo = {
   'polygons': [],
   'polygroup': {},
   'coords': [],
-  'colours': d3.scale.linear().domain([0, 20]).range(['#ffffff', '#71758a']),
+  'colours': d3.scale.linear().domain([0, 20]).range(['#909099', '#000000']),
   'colour': function() {return this.colours(Math.random() * 20);},
+  'delay': function() {return (Math.random() * 10) + 5;},
   'downtrianglecoords': function() {
     return '0,0  '+this.width+',0  '+this.width/2+','+this.height();
   },
@@ -99,79 +100,32 @@ var logo = {
   },
   'transition': function(type) {
     switch (type) {
-      case 'gradientx':
-        for (var i = 0; i < this.polygons.length; i++) {
-          for (var j = 0; j < this.polygons[i].length; j++) {
-            this.polygons[i][j].transition()
-              .delay(50 * j + 1000)
-              .duration(600)
-              .attr('fill', '#eeeeee')
-              .transition()
-              .duration(600)
-              .attr('fill', this.coords[i][j].z);
-          }
-        }
-      break;
-      case 'gradienty':
-        var c = this.colour();
-        for (var i = 0; i < this.polygons.length; i++) {
-          for (var j = 0; j < this.polygons[i].length; j++) {
-            this.polygons[i][j].transition()
-              .delay(50 * i + 1000)
-              .duration(600)
-              .attr('fill', c)
-              .transition()
-              .duration(600)
-              .attr('fill', this.coords[i][j].z);
-          }
-        }
-      break;
-      case 'gradientxy':
-        for (var i = 0; i < this.polygons.length; i++) {
-          for (var j = 0; j < this.polygons[i].length; j++) {
-            this.polygons[i][j].transition()
-              .delay(10 * i * j + 1000)
-              .duration(600)
-              .attr('fill', '#eeeeee')
-              .transition()
-              .duration(600)
-              .attr('fill', this.coords[i][j].z);
-          }
-        }
-      break;
       case 'playicon':
-        var c = this.colour();
+        var c = '#ffffff';
         for (var i = 0; i < this.playgrid.length; i++) {
           for (var j = 0; j < this.playgrid[i].length; j++) {
-            var fill = this.playgrid[i][j] ? '#000000' : '#ffffff';
             var opacity = this.playgrid[i][j] ? 1 : 0;
             this.polygons[i][j].transition()
-              .delay(100 * j)
-              .duration(500)
-              .attr('fill', c)
-              .transition()
+              .delay(this.delay() * j * i)
               .duration(500)
               .attr('opacity', opacity)
               .attr('fill', logo.colour());
           }
         }
         this.polygroup.transition()
+          .delay(200)
           .duration(300)
           .attr('transform', 'rotate(-90, 44, 40)');
       break;
       case 'logo':
-        var c = this.colour();
+        var c = '#ffffff';
         for (var i = 0; i < this.logogrid.length; i++) {
           for (var j = 0; j < this.logogrid[i].length; j++) {
-            var fill = this.logogrid[i][j] ? '#000000' : '#ffffff';
             var opacity = this.logogrid[i][j] ? 1 : 0;
             this.polygons[i][j].transition()
-              .delay(100 * i)
+              .delay(this.delay() * (this.logogrid[i].length - j) * (this.logogrid.length - i))
               .duration(500)
-              .attr('fill', c)
-              .transition()
-              .duration(500)
-              .attr('fill', fill)
+              .attr('fill', logo.colour())
               .attr('opacity', opacity);
           }
         }
@@ -184,12 +138,9 @@ var logo = {
         for (var i = 0; i < this.polygons.length; i++) {
           for (var j = 0; j < this.polygons[i].length; j++) {
             this.polygons[i][j].transition()
-              .delay(50 * i * j)
+              .delay(50 * i * j + 1000)
               .duration(500)
-              .attr('fill', c)
-              .transition()
-              .duration(500)
-              .attr('fill', this.coords[i][j].z)
+              .attr('fill', logo.colour())
               .attr('opacity', this.coords[i][j].o);
           }
         }
