@@ -3,71 +3,30 @@ var logo = {
   'height': function() {
     return Math.sqrt((this.width * this.width) - (this.width / 2) * (this.width / 2));
   },
-  'logogrid': [
-    [false, false, false,  false,  false,  false,  false,  false,  false],
-        [false, false, false,  false,  false,  false,  false,  false],
-        [false, false, false,  false,  false,  false,  false,  false],
-    [false, false, false,  false,  false,  false,  false,  false,  false],
-    [false, true,  true,   false,  false,  false,  true,   true,  false],
-        [false, true,  true,   false,  false,  true,   true,  false],
-        [false, true,  true,   false,  false,  true,   true,  false],
-    [false, false, true,   true,   false,  true,   true,   false,  false],
-    [false, false, true,   true,   false,  true,   true,   false,  false],
-        [false, false, true,   true,   true,   true,   false,  false],
-        [false, false, true,   true,   true,   true,   false,  false],
-    [false, false, false,  true,   false,  true,   false,  false,  false],
-    [false, false, false,  true,   false,  true,   false,  false,  false],
-        [false, false, false,  false,  false,  false,  false,  false],
-        [false, false, false,  false,  false,  false,  false,  false],
-    [false, false, false,  false,  false,  false,  false,  false,  false],
-    [false, false, false,  false,  false,  false,  false,  false,  false],
-        [false, false, false,  false,  false,  false,  false,  false],
-  ],
-  'playgrid': [
-    [false, false, false,  false,  false,  false,  false,  false,  false],
-        [false, false, false,  false,  false,  false,  false,  false],
-        [false, false, false,  false,  false,  false,  false,  false],
-    [false, false, false,  false,  false,  false,  false,  false,  false],
-    [false, false,  true,   true,  true,  true,  true,   false,  false],
-        [false, false,  true,   true,  true,  true,   false,  false],
-        [false, false,  true,   true,  true,  true,   false,  false],
-    [false, false, false,   true,   true,  true,   false,   false,  false],
-    [false, false, false,   true,   true,  true,   false,   false,  false],
-        [false, false, false,   true,   true,   false,   false,  false],
-        [false, false, false,   true,   true,   false,   false,  false],
-    [false, false, false,  false,   true,  false,   false,  false,  false],
-    [false, false, false,  false,   true,  false,   false,  false,  false],
-        [false, false, false,  false,  false,  false,  false,  false],
-        [false, false, false,  false,  false,  false,  false,  false],
-    [false, false, false,  false,  false,  false,  false,  false,  false],
-    [false, false, false,  false,  false,  false,  false,  false,  false],
-        [false, false, false,  false,  false,  false,  false,  false],
-  ],
-  'mailgrid': [
-    [false, false, false,  false,  false,  false,  false,  false,  false],
-        [false, false, false,  false,  false,  false,  false,  false],
-        [false, false, false,  false,  false,  false,  false,  false],
-    [false, false, false,  false,  false,  false,  false,  false,  false],
-    [false, true,  true,   true,  true,  true,  true,   true,  false],
-        [false, true,  true,   true,  true,  true,   true,  false],
-        [false, true,  true,   true,  true,  true,   true,  false],
-    [false, false, true,   true,   true,  true,   true,   false,  false],
-    [false, false, true,   true,   true,  true,   true,   false,  false],
-        [false, false, true,   true,   true,   true,   false,  false],
-        [false, false, true,   true,   true,   true,   false,  false],
-    [false, false, false,  true,   true,  true,   false,  false,  false],
-    [false, false, false,  true,   true,  true,   false,  false,  false],
-        [false, false, false,  true,  true,  false,  false,  false],
-        [false, false, false,  true,  true,  false,  false,  false],
-    [false, false, false,  false,  true,  false,  false,  false,  false],
-    [false, false, false,  false,  true,  false,  false,  false,  false],
-        [false, false, false,  false,  false,  false,  false,  false],
-  ],
+  'icongrid': [],
   'polygons': [],
   'polygroup': {},
-  'coords': [],
+  'userisdrawing': false,
+  'wipes': [
+    function(i, j) {return logo.delay() * 10 * j;},
+    function(i, j) {return logo.delay() * 10 * i;},
+    function(i, j) {return logo.delay() * 10 * logo.icongrid[i].length - j;},
+    function(i, j) {return logo.delay() * 5 * logo.icongrid.length - i;},
+    function(i, j) {return logo.delay() * 2 * i * j;},
+    function(i, j) {return logo.delay() * j * (logo.icongrid.length - i);},
+    function(i, j) {return logo.delay() * (logo.icongrid[i].length - j) * i;}
+  ],
   'colours': d3.scale.linear().domain([0, 20]).range(['#909099', '#000000']),
   'colour': function() {return this.colours(Math.random() * 20);},
+  'highlight': function(i) {
+    return globals.gradients[i](Math.random() * 20);
+  },
+  'currentColourrange': 0,
+  'colourChanger': function() {
+    if (!logo.userisdrawing) {
+      logo.transition('colour');
+    }
+  },
   'delay': function() {return (Math.random() * 10) + 5;},
   'downtrianglecoords': function() {
     return '0,0  '+this.width+',0  '+this.width/2+','+this.height();
@@ -78,90 +37,85 @@ var logo = {
 
   'build': function(target) {
     this.polygroup = d3.select(target).append('g');
+    this.icongrid = globals.matrices.logogrid;
     var top = 0;
-    for (var i = 0; i < this.logogrid.length; i++) {
-      this.coords[i] = [];
+    for (var i = 0; i < this.icongrid.length; i++) {
       this.polygons[i] = [];
       var points = i % 2 ? this.uptrianglecoords() : this.downtrianglecoords();
-      var xoffset = this.logogrid[i].length % 2 ? 0 : this.width/2;
-      for (var j = 0; j < this.logogrid[i].length; j++) {
+      var xoffset = this.icongrid[i].length % 2 ? 0 : this.width/2;
+      for (var j = 0; j < this.icongrid[i].length; j++) {
         var left = this.width * j + xoffset;
-        var fill = '#ffffff';
-        var opacity = this.logogrid[i][j] ? 1 : 0;
-        this.coords[i][j] = {'x': left, 'y': top, 'z': this.logogrid[i][j] ? '#000000' : '#ffffff', 'o': opacity};
         this.polygons[i][j] = this.polygroup.append('polygon')        
           .attr('points', points)
-          .attr('fill', fill)
-          .attr('opacity', opacity)
-          .attr('transform', 'translate('+ left +','+ top + ')');
+          .attr('fill', '#ffffff')
+          .attr('opacity', 0)
+          .attr('transform', 'translate('+ left +','+ top + ')')
+          .attr('ci', i)
+          .attr('cj', j)
+          .style('cursor', 'pointer');
       }
       top += i % 2 ? this.height() : 0;
     }
   },
   'transition': function(type) {
+    logo.currentColourrange = Math.floor(Math.random() * (globals.gradients.length));
+    var wipe = Math.floor(Math.random() * this.wipes.length);
     switch (type) {
       case 'playicon':
-        var c = '#ffffff';
-        for (var i = 0; i < this.playgrid.length; i++) {
-          for (var j = 0; j < this.playgrid[i].length; j++) {
-            var opacity = this.playgrid[i][j] ? 1 : 0;
-            this.polygons[i][j].transition()
-              .delay(this.delay() * j * i)
-              .duration(500)
-              .attr('opacity', opacity)
-              .attr('fill', logo.colour());
-          }
-        }
+        this.icongrid = globals.matrices.playgrid;
         this.polygroup.transition()
           .delay(200)
           .duration(300)
           .attr('transform', 'rotate(-90, 44, 40)');
       break;
       case 'logo':
-        var c = '#ffffff';
-        for (var i = 0; i < this.logogrid.length; i++) {
-          for (var j = 0; j < this.logogrid[i].length; j++) {
-            var opacity = this.logogrid[i][j] ? 1 : 0;
-            this.polygons[i][j].transition()
-              .delay(this.delay() * (this.logogrid[i].length - j) * (this.logogrid.length - i))
-              .duration(500)
-              .attr('fill', logo.colour())
-              .attr('opacity', opacity);
-          }
-        }
+        this.icongrid = globals.matrices.logogrid;
         this.polygroup.transition()
           .duration(300)
           .attr('transform', 'rotate(0, 44, 40)');
       break;
-      default:
-        var c = this.colour();
-        for (var i = 0; i < this.polygons.length; i++) {
-          for (var j = 0; j < this.polygons[i].length; j++) {
-            this.polygons[i][j].transition()
-              .delay(50 * i * j + 1000)
-              .duration(500)
-              .attr('fill', logo.colour())
-              .attr('opacity', this.coords[i][j].o);
-          }
-        }
-      break;
+    }
+    for (var i = 0; i < this.icongrid.length; i++) {
+      for (var j = 0; j < this.icongrid[i].length; j++) {
+        var colour = globals.gradients[this.currentColourrange](globals.matrices.colourorder[0][i][j]);
+        var opacity = this.icongrid[i][j] ? 1 : 0;
+        this.polygons[i][j].transition()
+          .delay(this.wipes[wipe](i, j))
+          .duration(500)
+          .attr('opacity', opacity)
+          .attr('fill', colour);
+      }
     }
   },
   'addevents': function() {
+    var n = 0;
+    var m = 1;
+    var reverse = false;
     for (var i = 0; i < this.polygons.length; i++) {
       for (var j = 0; j < this.polygons[i].length; j++) {
-        this.polygons[i][j].on('mouseover', function(d) {
+        this.polygons[i][j].on('mouseover', function() {
+          logo.userisdrawing = true;
+          globals.matrices.colourorder[0][d3.select(this).attr('ci')][d3.select(this).attr('cj')] = n;
+          reverse = n + m > 20 ? true : reverse;
+          reverse = n + m < 0 ? false : reverse;
+          m = reverse ? -1 : 1;
+          n = n + m;
           d3.select(this).transition()
             .duration(300)
-            .attr('fill', logo.colour());
+            .attr('fill', globals.gradients[logo.currentColourrange](n));
         });
-        this.polygons[i][j].on('mouseout', function(d) {
+        this.polygons[i][j].on('mouseout', function() {
           return false;
-        });
-        this.polygons[i][j].on('click', function(d) {
-          console.log('clicked');
         });
       }
     }
+    this.polygroup.on('mouseover', function() {
+      logo.userisdrawing = true;
+    }).on('mouseout', function() {
+      logo.userisdrawing = false;
+    }).on('click', function() {
+      console.log(globals.matrices.colourorder[0].join(', '));
+      logo.transition('colour');
+    });
   }
 }

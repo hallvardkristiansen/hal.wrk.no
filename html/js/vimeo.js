@@ -3,6 +3,7 @@ var vimeo = {
     'videos': [],
     'info': []
   },
+  'elements': [],
   'getAlbumInfo': function(albumId) {
     var that = this;
     $.ajax({
@@ -23,22 +24,29 @@ var vimeo = {
     });
   },
   'drawVideoHTML': function() {
-    var players = [];
-    var elements = [];
+    this.elements = [];
     for (var i = 0; i < this.album.videos.length; i++) {
-      elements[i] = {};
-      elements[i].container = $('<div>').attr('class', 'sample');
-      elements[i].iframe = $('<iframe webkitallowfullscreen mozallowfullscreen allowfullscreen>').attr('id', 'player' + i)
+      var format = this.album.videos[i].tags.indexOf('mobile') >= 0 ? 'mobile' : 'desktop';
+      console.log(this.album.videos[i]);
+      this.elements[i] = {};
+      this.elements[i].container = $('<div>').attr('class', 'sample center ' + format);
+      this.elements[i].graphic = $(globals[format + '_graphic']).attr('class', 'bg ' + format);
+      this.elements[i].iframe = $('<iframe webkitallowfullscreen mozallowfullscreen allowfullscreen>').attr('id', 'player' + i)
         .attr('src', '//player.vimeo.com/video/'+this.album.videos[i].id+'?api=1&player_id=player' + i)
-        .attr('width', 630)
-        .attr('height', 354);
-      elements[i].iframe.appendTo(elements[i].container);
-      elements[i].container.appendTo('#body');
+        .attr('width', this.album.videos[i].width)
+        .attr('height', this.album.videos[i].height);
+      this.elements[i].title = $('<h1>').html(this.album.videos[i].title).attr('class', 'title');
+      this.elements[i].description = $('<p>').html(this.album.videos[i].description).attr('class', 'description');
+      this.elements[i].iframe.appendTo(this.elements[i].container);
+      this.elements[i].graphic.appendTo(this.elements[i].container);
+      this.elements[i].title.appendTo(this.elements[i].container);
+      this.elements[i].description.appendTo(this.elements[i].container);
+      this.elements[i].container.appendTo('#body');
   
-      players[i] = $f(elements[i].iframe[0]);
+      this.elements[i].player = $f(this.elements[i].iframe[0]);
     
       // When the player is ready, add listeners for pause, finish, and playProgress
-      players[i].addEvent('ready', function(el) {
+      this.elements[i].player.addEvent('ready', function(el) {
         var player = $f($('#'+el)[0]);
         player.addEvent('play', function() {
           logo.transition('playicon');
@@ -52,7 +60,8 @@ var vimeo = {
         player.addEvent('playProgress', function() {
           return false;
         });
-      });    
+      });
+      $(window).resize();
     }
   }
 }
