@@ -1,9 +1,11 @@
 body {
   text-align: center;
-  background: #eee;
+  background: #eeeeee;
   color: #424143;
-  font-size: 0.9em;
-  font-family: 'PT Sans', serif;
+  font-size: 0.85em;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 300;
+  min-width: 510px;
 }
 a {
   color: #424143;
@@ -13,7 +15,8 @@ a:hover {
   color: #ccc;
 }
 .center {
-  width: 70%;
+  width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 #header {
@@ -29,26 +32,24 @@ a:hover {
   float: left;
   display: block;
   clear: none;
-  width: 40%;
+  width: 60%;
   box-sizing: border-box;
 }
 #logo {
   float: left;
-  width: 25%;
-  min-width: 6em;
+  width: 7em;
   height: 5em;
 }
 h1, h2 {
   font-size: 1em;
   margin: 0;
-  letter-spacing: 0.01em;
 }
 h1 {
   padding: 1.7em 0 0;
   font-weight: 700;
 }
 h2 {
-  font-weight: 400;
+  font-weight: 300;
 }
 #about {
   float: right;
@@ -63,6 +64,18 @@ h2 {
   clear: both;
   font-size: 1em;
 }
+.bg {
+  display: block;
+  clear: both;
+}
+.bg.odd {
+  background: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDEyODAgNzEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjgwIDcxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8xXyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSItMSIgeTE9IjAiIHgyPSIxMTgzLjgyODkiIHkyPSI3MTIiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTEuMDgxMiAwIDAgMSAxMjc5LjkxODggMCkiPjxzdG9wICBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiNFN0U3RUEiLz48c3RvcCAgb2Zmc2V0PSIxIiBzdHlsZT0ic3RvcC1jb2xvcjojRUVFRUVFIi8+DQo8L2xpbmVhckdyYWRpZW50Pjxwb2x5Z29uIGZpbGw9InVybCgjU1ZHSURfMV8pIiBwb2ludHM9IjEyODEsNjYyIDEyODEsMzQ5IDAsNTIgMCw1MDMgIi8+PC9zdmc+) no-repeat center -50;
+  background-size: cover;
+}
+.bg.even {
+  background: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDEyODAgODAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjgwIDgwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8xXyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSI2MTYuMTQ3MyIgeTE9IjU3Mi45OTI0IiB4Mj0iNjc0Ljc1NjYiIHkyPSIyMTMuOTYwMiIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAwIDg0NCkiPjxzdG9wICBvZmZzZXQ9IjguMjY4NzUxZS0wMiIgc3R5bGU9InN0b3AtY29sb3I6I0U3RTdFQSIvPjxzdG9wICBvZmZzZXQ9IjEiIHN0eWxlPSJzdG9wLWNvbG9yOiNFRUVFRUUiLz48L2xpbmVhckdyYWRpZW50Pjxwb2x5Z29uIGZpbGw9InVybCgjU1ZHSURfMV8pIiBwb2ludHM9Ii0xLDc0NiAtMSw0NTMgMTI3OSw3NiAxMjc5LDUyNyAiLz48L3N2Zz4=) no-repeat center -35;
+  background-size: cover;
+}
 .sample {
   display: block;
   clear: both;
@@ -73,10 +86,14 @@ h2 {
 .sample iframe {
 	width: 91.8%;
 	height: 515px;
-	margin: 4% auto 8em auto;
+	margin: 4% auto 14%;
 	border: none;
 	position: relative;
 	z-index: 2;
+}
+.sample.mobile iframe {
+  width: 71.4%;
+  margin: 3.6% auto 3em;
 }
 .sample .bg {
   position: absolute;

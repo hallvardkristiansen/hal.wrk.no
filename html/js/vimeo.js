@@ -29,6 +29,7 @@ var vimeo = {
       var format = this.album.videos[i].tags.indexOf('mobile') >= 0 ? 'mobile' : 'desktop';
       console.log(this.album.videos[i]);
       this.elements[i] = {};
+      this.elements[i].bgcontainer = $('<div>').attr('class', 'bg ' + (i % 2 ? 'odd' : 'even'));
       this.elements[i].container = $('<div>').attr('class', 'sample center ' + format);
       this.elements[i].graphic = $(globals[format + '_graphic']).attr('class', 'bg ' + format);
       this.elements[i].iframe = $('<iframe webkitallowfullscreen mozallowfullscreen allowfullscreen>').attr('id', 'player' + i)
@@ -41,7 +42,8 @@ var vimeo = {
       this.elements[i].graphic.appendTo(this.elements[i].container);
       this.elements[i].title.appendTo(this.elements[i].container);
       this.elements[i].description.appendTo(this.elements[i].container);
-      this.elements[i].container.appendTo('#body');
+      this.elements[i].container.appendTo(this.elements[i].bgcontainer);
+      this.elements[i].bgcontainer.appendTo('#body');
   
       this.elements[i].player = $f(this.elements[i].iframe[0]);
     
