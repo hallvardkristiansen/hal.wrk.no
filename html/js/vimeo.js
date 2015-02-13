@@ -27,7 +27,6 @@ var vimeo = {
     this.elements = [];
     for (var i = 0; i < this.album.videos.length; i++) {
       var format = this.album.videos[i].tags.indexOf('mobile') >= 0 ? 'mobile' : 'desktop';
-      console.log(this.album.videos[i]);
       this.elements[i] = {};
       this.elements[i].bgcontainer = $('<div>').attr('class', 'bg ' + (i % 2 ? 'odd' : 'even'));
       this.elements[i].container = $('<div>').attr('class', 'sample center ' + format);

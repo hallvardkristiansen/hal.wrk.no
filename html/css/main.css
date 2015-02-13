@@ -16,7 +16,7 @@ a:hover {
 }
 .center {
   width: 80%;
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
 }
 #header {
@@ -81,7 +81,7 @@ h2 {
   clear: both;
   text-align: center;
   position: relative;
-  margin-bottom: 4em;
+  margin-bottom: 7%;
 }
 .sample iframe {
 	width: 91.8%;
