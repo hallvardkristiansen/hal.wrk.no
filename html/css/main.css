@@ -71,10 +71,12 @@ h2 {
 .bg.odd {
   background-image: url(../svg/bg_odd.svg);
   background-size: cover;
+  background-position-y: -50px;
 }
 .bg.even {
   background-image: url(../svg/bg_even.svg);
   background-size: cover;
+  background-position-y: -35px;
 }
 .sample {
   display: block;
