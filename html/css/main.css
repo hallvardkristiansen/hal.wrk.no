@@ -69,11 +69,11 @@ h2 {
   clear: both;
 }
 .bg.odd {
-  background: url(../svg/bg_odd.svg) no-repeat center -50;
+  background-image: url(../svg/bg_odd.svg) no-repeat center center;
   background-size: cover;
 }
 .bg.even {
-  background: url(../svg/bg_even.svg) no-repeat center -35;
+  background: url(../svg/bg_even.svg) no-repeat center center;
   background-size: cover;
 }
 .sample {
