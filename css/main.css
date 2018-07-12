@@ -8,7 +8,7 @@ body {
   min-width: 510px;
 }
 a {
-  color: #424143;
+  color: #a488bf;
   text-decoration: none;
 }
 a:hover {
@@ -84,6 +84,20 @@ h2 {
   text-align: center;
   position: relative;
   margin-bottom: 7%;
+}
+.sample a.image {
+  display: block;
+  width: 100%;
+  height: auto;
+	position: relative;
+	z-index: 2;
+	margin-bottom: 10%;
+  padding: 4%;
+  box-sizing: border-box;
+}
+.sample a.image img {
+  width: 100%;
+  height: auto;
 }
 .sample iframe {
 	width: 91.8%;

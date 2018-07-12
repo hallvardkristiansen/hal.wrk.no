@@ -8,9 +8,11 @@ $(function() {
   setInterval(logo.colourChanger, 5000);
   $(window).resize(function() {
     for (var i = 0; i < vimeo.elements.length; i++) {
-      vimeo.elements[i].iframe.css({
-        'height': vimeo.elements[i].iframe.width() / 1.77 + 'px'
-      });
+      if (typeof vimeo.elements[i].iframe != 'undefined') {
+        vimeo.elements[i].iframe.css({
+          'height': vimeo.elements[i].iframe.width() / 1.77 + 'px'
+        });
+      }
     }
   });
   $(window).resize();
