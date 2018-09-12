@@ -19,6 +19,14 @@ var vimeo = {
       "height":720,
       "tags":"desktop link"
       },{
+      "title":"Spooning - cookie dough",
+      "description":"Spooning cookie dough was featured on \"Die Höle der Löwen\" on September 11th 2018 and as such needed to be highly optimised in preparation for over 30.000 concurrent visitors. I built it on commission by Zentral Norden design agency who provided the designs and are partners in the company.<br \/>\r\n<br \/>\r\nYou can view the site here: <a href='https://spooning-cookie-dough.com/' target='blank'>https://spooning-cookie-dough.com</a>",
+      "image":"project_imgs/spooning.jpg",
+      "link":"https://spooning-cookie-dough.com/",
+      "width":1280,
+      "height":720,
+      "tags":"desktop link"
+      },{
       "title":"Bultmanns Hoff - online butcher",
       "description":"Bultmanns Hoff is an ecological beef farm in northern Germany with a webshop where you can order prime beef delivered straight to your door. I built the site based on Wordpress and Woocommerce on commission by Zentral Norden design agency who provided the designs and are partners in the company.<br \/>\r\n<br \/>\r\nYou can view the site here: <a href='https://bultmanns-hoff.de/' target='blank'>https://bultmanns-hoff.de</a>",
       "image":"project_imgs/bultmannshoff.jpg",
