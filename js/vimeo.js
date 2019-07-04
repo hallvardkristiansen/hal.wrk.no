@@ -11,10 +11,18 @@ var vimeo = {
   'getAlbumVideos': function(albumId) {
     var that = this;
     that.album.videos = [{
-      "title":"CDM.link - Music creators magazine",
+      "title":"CDM.link - music creators magazine",
       "description":"CDM is an online magazine founded by Peter Kirn in 2004 and read by tens of thousands of artists and producers around the world each day. I have managed the servers and done all development work on the site since 2016. The site is an optimised Wordpress setup with a custom responsive theme.<br \/>\r\n<br \/>\r\nYou can view the site here: <a href='http://cdm.link' target='blank'>http://cdm.link</a>",
       "image":"project_imgs/cdm.jpg",
       "link":"http://cdm.link",
+      "width":1280,
+      "height":720,
+      "tags":"desktop link"
+      },{
+      "title":"Heartbeat-med - patient self-reporting software",
+      "description":"New, highly optimized, Gutenberg compatible Wordpress theme for patient reporting software company Heartbeat-med.<br \/>\r\n<br \/>\r\nDesigned by Zentralnorden and built by me.<br \/>\r\n<br \/>\r\nYou can view the site here: <a href='https://heartbeat-med.com' target='blank'>https://heartbeat-med.com</a>",
+      "image":"project_imgs/heartbeat.jpg",
+      "link":"https://heartbeat-med.com",
       "width":1280,
       "height":720,
       "tags":"desktop link"
@@ -31,6 +39,14 @@ var vimeo = {
       "description":"Bultmanns Hoff is an ecological beef farm in northern Germany with a webshop where you can order prime beef delivered straight to your door. I built the site based on Wordpress and Woocommerce on commission by Zentral Norden design agency who provided the designs and are partners in the company.<br \/>\r\n<br \/>\r\nYou can view the site here: <a href='https://bultmanns-hoff.de/' target='blank'>https://bultmanns-hoff.de</a>",
       "image":"project_imgs/bultmannshoff.jpg",
       "link":"https://bultmanns-hoff.de/",
+      "width":1280,
+      "height":720,
+      "tags":"desktop link"
+      },{
+      "title":"Bbhugme - maternity products",
+      "description":"Fully custom Shopify theme build with Slate for pregnancy pillow manufacturer Bbhugme.<br \/>\r\n<br \/>\r\nDesigned by Creuna and fully built by me.<br \/>\r\n<br \/>\r\nYou can view the site here: <a href='https://www.bbhugme.com/' target='blank'>https://www.bbhugme.com/</a>",
+      "image":"project_imgs/bbhugme.jpg",
+      "link":"https://www.bbhugme.com/",
       "width":1280,
       "height":720,
       "tags":"desktop link"
