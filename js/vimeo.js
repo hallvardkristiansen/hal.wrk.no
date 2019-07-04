@@ -28,7 +28,7 @@ var vimeo = {
       "tags":"desktop link"
       },{
       "title":"Spooning - cookie dough",
-      "description":"Spooning cookie dough was featured on \"Die Höle der Löwen\" on September 11th 2018 and as such needed to be highly optimised in preparation for over 30.000 concurrent visitors. I built it on commission by Zentral Norden design agency who provided the designs and are partners in the company.<br \/>\r\n<br \/>\r\nYou can view the site here: <a href='https://spooning-cookie-dough.com/' target='blank'>https://spooning-cookie-dough.com</a>",
+      "description":"Spooning cookie dough was featured on \"Die Höle der Löwen\" on September 11th 2018 and as such needed to be highly optimised in preparation for over 30.000 concurrent visitors. Later I integrated the site with Shopify as a custom template built with Slate.<br \/>\r\nMade on commission by Zentral Norden design agency who provided the designs and are partners in the company.<br \/>\r\n<br \/>\r\nYou can view the site here: <a href='https://spooning-cookie-dough.com/' target='blank'>https://spooning-cookie-dough.com</a>",
       "image":"project_imgs/spooning.jpg",
       "link":"https://spooning-cookie-dough.com/",
       "width":1280,
