@@ -59,7 +59,7 @@ var logo = {
   },
   'transition': function(type) {
     logo.currentColourrange = Math.floor(Math.random() * (globals.gradients.length));
-    d3.select('a').style('color', globals.gradients[logo.currentColourrange][0]);
+    d3.select('a').style('color', globals.gradients[this.currentColourrange](0));
     var wipe = Math.floor(Math.random() * this.wipes.length);
     switch (type) {
       case 'playicon':
