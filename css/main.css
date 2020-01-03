@@ -10,6 +10,7 @@ body {
 a {
   color: #a488bf;
   text-decoration: none;
+  transition: color ease-in-out 500ms;
 }
 a:hover {
   color: #ccc;
