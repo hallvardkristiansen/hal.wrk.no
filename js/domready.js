@@ -5,7 +5,7 @@ $(function() {
   logo.addevents();
   logo.transition();
   vimeo.getAlbumVideos(vimeoalbumid);
-  setInterval(logo.colourChanger, 5000);
+  setInterval(logo.colourChanger, 1000);
   $(window).resize(function() {
     for (var i = 0; i < vimeo.elements.length; i++) {
       if (typeof vimeo.elements[i].iframe != 'undefined') {
