@@ -72,10 +72,12 @@ h2 {
   background-color: #131313;
   padding-top: 3.5%;
   padding-bottom: 3.5%;
+  border-top: 2px solid #111;
 }
 .bg.odd {
   padding-top: 3.5%;
   padding-bottom: 3.5%;
+  border-top: 2px solid #111;
 }
 .sample {
   display: block;
