@@ -13,7 +13,7 @@ a {
   transition: color ease-in-out 500ms;
 }
 a:hover {
-  color: #ccc;
+  color: #ccc !important;
 }
 .center {
   width: 80%;
