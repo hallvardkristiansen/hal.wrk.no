@@ -1,4 +1,4 @@
 hal.wrk.no
 ==========
 
-Portfolio site
+Personal portfolio site
