@@ -53,7 +53,7 @@ var vimeo = {
       },{
       "id":115868816,
       "title":"Edgefolio allocators screening tool",
-      "description":"One out of several web applications for navigating Hedge Fund performance data. <br \/>\r\nBuilt with Angular.js and D3.js using a Django based Rest API.<br \/>\r\nThe application is designed to work with both desktop and tablets.<br \/>\r\n<br \/>\r\nAn in-depth demo of the application can be viewed here: <a href='https:\/\/vimeo.com\/116943722' target='blank'>https:\/\/vimeo.com\/116943722</a><br \/>\r\n<br \/>\r\nMy role in this project included; managing branding, user experience planning, user interface design and scripting of all widgets and graphs using D3.js from 2013 until 2015.<br \/>\r\n<br \/>\r\nAngular.js framework and HTML\/CSS templates by Ahmet Atasoy.<br \/>\r\nDjango Rest API and data importer by Harish Narayanan and Bastien Bourdon.",
+      "description":"One out of several web applications for navigating Hedge Fund performance data. <br \/>\r\nBuilt with Angular.js and D3.js using a Django based Rest API.<br \/>\r\nThe application is designed to work with both desktop and tablets.<br \/>\r\n<br \/>\r\nAn in-depth demo of the application can be viewed here: <a href='https:\/\/vimeo.com\/142147126' target='blank'>https:\/\/vimeo.com\/142147126</a><br \/>\r\n<br \/>\r\nMy role in this project included; managing branding, user experience planning, user interface design and scripting of all widgets and graphs using D3.js from 2013 until 2015.<br \/>\r\n<br \/>\r\nAngular.js framework and HTML\/CSS templates by Ahmet Atasoy.<br \/>\r\nDjango Rest API and data importer by Harish Narayanan and Bastien Bourdon.",
       "url":"https:\/\/vimeo.com\/115868816",
       "width":1280,
       "height":720,
