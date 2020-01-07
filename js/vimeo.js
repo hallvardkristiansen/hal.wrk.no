@@ -19,6 +19,22 @@ var vimeo = {
       "height":720,
       "tags":"desktop link"
       },{
+      "title":"Lean One",
+      "description":"Gutenberg compatible Wordpress theme for workflow consultancy company Lean One.<br \/>\r\n<br \/>\r\nDesigned by Zentralnorden and built by me.<br \/>\r\n<br \/>\r\nYou can view the site here: <a href='https://leanone.de' target='blank'>https://leanone.de/</a>",
+      "image":"project_imgs/leanone.jpg",
+      "link":"https://leanone.de/",
+      "width":1280,
+      "height":720,
+      "tags":"desktop link"
+      },{
+      "title":"Protest-o-mat",
+      "description":"Protest banner generator for the climate demonstrations in Berlin 2019.<br \/>\r\n<br \/>\r\nDesigned by Zentralnorden using Webflow, finalised by me. Image generation script written in python by me.<br \/>\r\n<br \/>\r\nYou can view the site here: <a href='https://www.protest-o-mat.org/' target='blank'>https://www.protest-o-mat.org/</a>",
+      "image":"project_imgs/protestomat.jpg",
+      "link":"https://heartbeat-med.com",
+      "width":1280,
+      "height":720,
+      "tags":"desktop link"
+      },{
       "title":"Heartbeat-med - patient self-reporting software",
       "description":"New, highly optimized, Gutenberg compatible Wordpress theme for patient reporting software company Heartbeat-med.<br \/>\r\n<br \/>\r\nDesigned by Zentralnorden and built by me.<br \/>\r\n<br \/>\r\nYou can view the site here: <a href='https://heartbeat-med.com' target='blank'>https://heartbeat-med.com</a>",
       "image":"project_imgs/heartbeat.jpg",
