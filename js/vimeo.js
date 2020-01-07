@@ -36,7 +36,7 @@ var vimeo = {
       "tags":"desktop link"
       },{
       "title":"Bultmanns Hoff - online butcher",
-      "description":"Bultmanns Hoff is an ecological beef farm in northern Germany with a webshop where you can order prime beef delivered straight to your door. I built the site based on Wordpress and Woocommerce on commission by Zentral Norden design agency who provided the designs and are partners in the company.<br \/>\r\n<br \/>\r\nYou can view the site here: <a href='https://bultmanns-hoff.de/' target='blank'>https://bultmanns-hoff.de</a>",
+      "description":"Bultmanns Hoff is an ecological beef farm in northern Germany with a webshop where you can order prime beef delivered straight to your door. I built the site based on Wordpress and Woocommerce on commission by Zentral Norden design agency who provided the designs and are partners in the company.<br \/>\r\n<br \/>\r\nThe site has been taken down, but you can view a case study here: <a href='https://www.zentralnorden.com/case-buho' target='blank'>https://www.zentralnorden.com/case-buho</a>",
       "image":"project_imgs/bultmannshoff.jpg",
       "link":"https://bultmanns-hoff.de/",
       "width":1280,
