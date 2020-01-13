@@ -75,14 +75,6 @@ var vimeo = {
       "height":720,
       "tags":"desktop"
       },{
-      "id":115864014,
-      "title":"Comoyo Capture prototype",
-      "description":"The web application aspect of a direct competitor to Dropbox and Google Drive.<br \/>\r\n<br \/>\r\nMy role in this project was all frontend development as well as some UX planning consultancy.<br \/>\r\nDesigned by Bleed and built on top of Netlife's cloud storage Rest API.<br \/>\r\nCreated 2011 - 2012",
-      "url":"https:\/\/vimeo.com\/115864014",
-      "width":1280,
-      "height":720,
-      "tags":"desktop"
-      },{
       "id":115865949,
       "title":"Eltek return on investment calculator",
       "description":"Generates a printable report on savings from exchanging traditional grid\/generator power systems with Eltek\u2019s solar hybrid systems for GSM base stations.<br \/>\r\n<br \/>\r\nThe maths for calculating operational cost of a power system are extremely complex, taking into account everything from the angle of the sun at a given time and place to the impact of deterioration of components due to heat variations on the cost of maintenance and were all extracted from excel worksheets that had grown too large for practical use. <br \/>\r\n<br \/>\r\nThe web application also allows for better control over aesthetics and allows the users to store and retrieve previous reports.<br \/>\r\n<br \/>\r\nMy role in this project was UX planning, UI design, frontend \/ backend development and reverse engineering and translating the equations necessary to calculate investment and operational costs accurately.<br \/>\r\n<br \/>\r\nThe project was completed and handed over in 2013 and is now being maintained by the client.<br \/>\r\nBuilt on top of Drupal using Twitter Bootstrap and D3.js.",
@@ -104,22 +96,6 @@ var vimeo = {
       "description":"The desktop\/tablet version of their portfolio site has small clickable surfaces that do not translate well to smaller screens, so I created this alternate layout which is more finger-friendly while retaining all of the features of the site.<br \/>\r\n<br \/>\r\nThe site is built on Drupal using jQuery in an MVC-inspired manner.",
       "url":"https:\/\/vimeo.com\/115874769",
       "duration":32,
-      "width":1280,
-      "height":720,
-      "tags":"mobile, horizontal"
-      },{
-      "id":115873546,
-      "title":"Dansens Hus website",
-      "description":"Website for Dansens Hus, the Norwegian stage for contemporary dance.<br \/>\r\nBuilt as a custom theme for Wordpress with device detection, the site is planned and designed to work well on both desktop and tablet as well as being easy to manage for the client, incorporating automation of translation services and a custom, automatic image gallery zipping plugin for creating press packages of the events.<br \/>\r\n<br \/>\r\nMy role in this project was designer, user experience planner, frontend and backend developer from 2008 until 2015.",
-      "url":"https:\/\/vimeo.com\/115873546",
-      "width":1280,
-      "height":720,
-      "tags":"desktop"
-      },{
-      "id":115876313,
-      "title":"Dansens Hus mobile website",
-      "description":"Since a significant number of their users visit the site from mobile devices, I designed and built a more mobile friendly theme for their Wordpress based website. The design incorporates all the functionality of the desktop\/tablet theme while saving some bandwidth by reducing the amount of large images displayed.",
-      "url":"https:\/\/vimeo.com\/115876313",
       "width":1280,
       "height":720,
       "tags":"mobile, horizontal"
