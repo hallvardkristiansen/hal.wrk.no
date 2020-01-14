@@ -20,7 +20,7 @@ var vimeo = {
       "tags":"desktop link"
       },{
       "title":"Lean One",
-      "description":"Gutenberg compatible Wordpress theme based on Sage by Roots.io for workflow consultancy company Lean One.<br \/>\r\n<br \/>\r\nDesigned by Zentralnorden and built by me.<br \/>\r\n<br \/>\r\nYou can view the site here: <a href='https://leanone.de' target='blank'>https://leanone.de/</a>",
+      "description":"Gutenberg compatible Wordpress theme based on Sage by Roots.io for workflow consultancy company Lean One.<br \/>\r\n<br \/>\r\nDesigned by <a href='https://www.zentralnorden.com/' target='_blank'>Zentralnorden</a> and built by me.<br \/>\r\n<br \/>\r\nYou can view the site here: <a href='https://leanone.de' target='blank'>https://leanone.de/</a>",
       "image":"project_imgs/leanone.jpg",
       "link":"https://leanone.de/",
       "width":1280,
@@ -28,7 +28,7 @@ var vimeo = {
       "tags":"desktop link"
       },{
       "title":"Protest-o-mat",
-      "description":"Protest banner generator for the climate demonstrations in Berlin 2019.<br \/>\r\n<br \/>\r\nDesigned by Zentralnorden using Webflow, finalised by me. Image generation script written in python by me.<br \/>\r\n<br \/>\r\nYou can view the site here: <a href='https://www.protest-o-mat.org/' target='blank'>https://www.protest-o-mat.org/</a>",
+      "description":"Protest banner generator for the climate demonstrations in Berlin 2019.<br \/>\r\n<br \/>\r\nDesigned by <a href='https://www.zentralnorden.com/' target='_blank'>Zentralnorden</a> using Webflow, finalised by me. Image generation script written in python by me.<br \/>\r\n<br \/>\r\nYou can view the site here: <a href='https://www.protest-o-mat.org/' target='blank'>https://www.protest-o-mat.org/</a>",
       "image":"project_imgs/protestomat.jpg",
       "link":"https://www.protest-o-mat.org",
       "width":1280,
@@ -36,7 +36,7 @@ var vimeo = {
       "tags":"desktop link"
       },{
       "title":"Heartbeat-med - patient self-reporting software",
-      "description":"New, highly optimized, Gutenberg compatible Wordpress theme for patient reporting software company Heartbeat-med.<br \/>\r\n<br \/>\r\nDesigned by Zentralnorden and built by me.<br \/>\r\n<br \/>\r\nYou can view the site here: <a href='https://heartbeat-med.com' target='blank'>https://heartbeat-med.com</a>",
+      "description":"New, highly optimized, Gutenberg compatible Wordpress theme for patient reporting software company Heartbeat-med.<br \/>\r\n<br \/>\r\nDesigned by <a href='https://www.zentralnorden.com/' target='_blank'>Zentralnorden</a> and built by me.<br \/>\r\n<br \/>\r\nYou can view the site here: <a href='https://heartbeat-med.com' target='blank'>https://heartbeat-med.com</a>",
       "image":"project_imgs/heartbeat.jpg",
       "link":"https://heartbeat-med.com",
       "width":1280,
@@ -44,7 +44,7 @@ var vimeo = {
       "tags":"desktop link"
       },{
       "title":"Spooning - cookie dough",
-      "description":"Spooning cookie dough was featured on \"Die Höle der Löwen\" on September 11th 2018 and as such needed to be highly optimised in preparation for over 30.000 concurrent visitors. Later I integrated the site with Shopify as a custom template built with Slate.<br \/>\r\nMade on commission by Zentral Norden design agency who provided the designs and are partners in the company.<br \/>\r\n<br \/>\r\nYou can view the site here: <a href='https://spooning-cookie-dough.com/' target='blank'>https://spooning-cookie-dough.com</a>",
+      "description":"Spooning cookie dough was featured on \"Die Höle der Löwen\" on September 11th 2018 and as such needed to be highly optimised in preparation for over 30.000 concurrent visitors. Later I integrated the site with Shopify as a custom template built with Slate.<br \/>\r\nMade on commission by <a href='https://www.zentralnorden.com/' target='_blank'>Zentralnorden</a> design agency who provided the designs and are partners in the company.<br \/>\r\n<br \/>\r\nYou can view the site here: <a href='https://spooning-cookie-dough.com/' target='blank'>https://spooning-cookie-dough.com</a>",
       "image":"project_imgs/spooning.jpg",
       "link":"https://spooning-cookie-dough.com/",
       "width":1280,
@@ -52,7 +52,7 @@ var vimeo = {
       "tags":"desktop link"
       },{
       "title":"Bultmanns Hoff - online butcher",
-      "description":"Bultmanns Hoff is an ecological beef farm in northern Germany with a webshop where you can order prime beef delivered straight to your door. I built the site based on Wordpress and Woocommerce on commission by Zentral Norden design agency who provided the designs and are partners in the company.<br \/>\r\n<br \/>\r\nThe site has been taken down, but you can view a case study here: <a href='https://www.zentralnorden.com/case-buho' target='blank'>https://www.zentralnorden.com/case-buho</a>",
+      "description":"Bultmanns Hoff is an ecological beef farm in northern Germany with a webshop where you can order prime beef delivered straight to your door. I built the site based on Wordpress and Woocommerce on commission by <a href='https://www.zentralnorden.com/' target='_blank'>Zentralnorden</a> design agency who provided the designs and are partners in the company.<br \/>\r\n<br \/>\r\nThe site has been taken down, but you can view a case study here: <a href='https://www.<a href='https://www.zentralnorden.com/' target='_blank'>Zentralnorden</a>.com/case-buho' target='blank'>https://www.<a href='https://www.zentralnorden.com/' target='_blank'>Zentralnorden</a>.com/case-buho</a>",
       "image":"project_imgs/bultmannshoff.jpg",
       "link":"https://bultmanns-hoff.de/",
       "width":1280,
