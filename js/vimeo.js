@@ -20,7 +20,7 @@ var vimeo = {
       "tags":"desktop link"
       },{
       "title":"Lean One",
-      "description":"Gutenberg compatible Wordpress theme for workflow consultancy company Lean One.<br \/>\r\n<br \/>\r\nDesigned by Zentralnorden and built by me.<br \/>\r\n<br \/>\r\nYou can view the site here: <a href='https://leanone.de' target='blank'>https://leanone.de/</a>",
+      "description":"Gutenberg compatible Wordpress theme based on Sage by Roots.io for workflow consultancy company Lean One.<br \/>\r\n<br \/>\r\nDesigned by Zentralnorden and built by me.<br \/>\r\n<br \/>\r\nYou can view the site here: <a href='https://leanone.de' target='blank'>https://leanone.de/</a>",
       "image":"project_imgs/leanone.jpg",
       "link":"https://leanone.de/",
       "width":1280,
