@@ -12,7 +12,7 @@ var vimeo = {
     var that = this;
     that.album.videos = [{
       "title":"VCLFO Eurorack module",
-      "description":"Eurorack format synthesizer module for mass production. Designed and manufactured by me, code by <a href='https://electricdruid.net/' target='blank'>Electric Druid</a>",
+      "description":"Eurorack format synthesizer module for mass production. Designed and manufactured by me, code by <a href='https://electricdruid.net/' target='blank'>Electric Druid</a><br \/>\r\n<br \/>\r\nYou can view the manual here: <a href='https://thorn.audio' target='blank'>https://thorn.audio</a>",
       "image":"project_imgs/thorn_vclfo.jpg",
       "link":"https://thorn.audio",
       "width":1280,
@@ -28,8 +28,8 @@ var vimeo = {
       "tags":"desktop link"
       },{
       "title":"Swift screensaver",
-      "description":"Screensaver for OSX written in Swift 5. Uses the time on the computer to calculate the relative positions of the planets, the current duration of a day based on latitude and longitude and the current moon phase. To use, clone the git repository and change the lat/lng coordinates to your location, then compile for your version of OSX using xcode.",
-      "image":"project_imgs/screensaver.png",
+      "description":"Screensaver for OSX written in Swift 5. Uses the time on the computer to calculate the relative positions of the planets, the current duration of a day based on latitude and longitude and the current moon phase. To use, clone the git repository and change the lat/lng coordinates to your location, then compile for your version of OSX using xcode.<br \/>\r\n<br \/>\r\nYou can view and download the code here: <a href='https://github.com/hallvardkristiansen/daylight-calendar-screensaver' target='blank'>Github repository</a>",
+      "image":"project_imgs/screensave.jpg",
       "link":"https://github.com/hallvardkristiansen/daylight-calendar-screensaver",
       "width":1280,
       "height":720,
