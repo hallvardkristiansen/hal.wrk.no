@@ -11,6 +11,14 @@ var vimeo = {
   'getAlbumVideos': function(albumId) {
     var that = this;
     that.album.videos = [{
+      "title":"VCLFO Eurorack module",
+      "description":"Eurorack format synthesizer module for mass production. Designed and manufactured by me, code by <a href='https://electricdruid.net/' target='blank'>Electric Druid</a>",
+      "image":"project_imgs/thorn_vclfo.jpg",
+      "link":"https://thorn.audio",
+      "width":1280,
+      "height":720,
+      "tags":"desktop link"
+      },{
       "title":"CDM.link - music creators magazine",
       "description":"CDM is an online magazine founded by Peter Kirn in 2004 and read by tens of thousands of artists and producers around the world each day. I have managed the servers and done all development work on the site since 2016. The site is an optimised Wordpress setup with a custom responsive theme.<br \/>\r\n<br \/>\r\nYou can view the site here: <a href='http://cdm.link' target='blank'>http://cdm.link</a>",
       "image":"project_imgs/cdm.jpg",
