@@ -29,7 +29,7 @@ var vimeo = {
       },{
       "title":"Swift screensaver",
       "description":"Screensaver for OSX written in Swift 5. Uses the time on the computer to calculate the relative positions of the planets, the current duration of a day based on latitude and longitude and the current moon phase. To use, clone the git repository and change the lat/lng coordinates to your location, then compile for your version of OSX using xcode.<br \/>\r\n<br \/>\r\nYou can view and download the code here: <a href='https://github.com/hallvardkristiansen/daylight-calendar-screensaver' target='blank'>Github repository</a>",
-      "image":"project_imgs/screensave.jpg",
+      "image":"project_imgs/screensaver.jpg",
       "link":"https://github.com/hallvardkristiansen/daylight-calendar-screensaver",
       "width":1280,
       "height":720,
