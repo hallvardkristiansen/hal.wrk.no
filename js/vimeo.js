@@ -19,6 +19,14 @@ var vimeo = {
       "height":720,
       "tags":"desktop link"
       },{
+      "title":"Swift screensaver",
+      "description":"Screensaver for OSX written in Swift 5. Uses the time on the computer to calculate the relative positions of the planets, the current duration of a day based on latitude and longitude and the current moon phase. To use, clone the git repository and change the lat/lng coordinates to your location, then compile for your version of OSX using xcode.",
+      "image":"project_imgs/screensaver.png",
+      "link":"https://github.com/hallvardkristiansen/daylight-calendar-screensaver",
+      "width":1280,
+      "height":720,
+      "tags":"desktop link"
+      },{
       "title":"Lean One",
       "description":"Gutenberg compatible Wordpress theme based on Sage by Roots.io for workflow consultancy company Lean One.<br \/>\r\n<br \/>\r\nDesigned by <a href='https://www.zentralnorden.com/' target='_blank'>Zentralnorden</a> and built by me.<br \/>\r\n<br \/>\r\nYou can view the site here: <a href='https://leanone.de' target='blank'>https://leanone.de/</a>",
       "image":"project_imgs/leanone.jpg",
